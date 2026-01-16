@@ -133,15 +133,16 @@ export default function Home() {
                             </h2>
                             <div className="divider" />
                             <p className="text-[var(--color-walnut)] mb-6 leading-relaxed">
-                                With over a decade of experience in luxury interior design, we bring
-                                a unique blend of artistic vision and meticulous attention to detail
-                                to every project. Our philosophy centers on creating spaces that are
-                                not just beautiful, but deeply personal.
+                                Boffo Decor is an interior design studio driven by the belief that well-designed spaces elevate everyday living. We specialize in creating functional, aesthetically refined interiors that reflect our clients’ lifestyles, values, and aspirations.
+                            </p>
+                            <p className="text-[var(--color-walnut)] mb-6 leading-relaxed">
+                                Founded with a passion for thoughtful design and practical execution, Boffo Decor offers end-to-end interior solutions for residential and commercial spaces. Our approach balances creativity with functionality—ensuring every space is not only visually striking but also comfortable, efficient, and timeless.
+                            </p>
+                            <p className="text-[var(--color-walnut)] mb-6 leading-relaxed">
+                                At Boffo Decor, we focus on understanding our clients’ needs in depth, translating ideas into cohesive designs through careful planning, material selection, and attention to detail. From concept development to final execution, we collaborate closely with clients to deliver spaces that feel personal, purposeful, and inspiring.
                             </p>
                             <p className="text-[var(--color-walnut)] mb-8 leading-relaxed">
-                                From concept to completion, we collaborate closely with our clients
-                                to understand their lifestyle, preferences, and aspirations, ensuring
-                                each design tells their unique story.
+                                With a commitment to quality, transparency, and design integrity, Boffo Decor aims to create interiors that are not just seen, but truly experienced.
                             </p>
                             <Link href="/about" className="btn btn-primary">
                                 Learn More About Us
