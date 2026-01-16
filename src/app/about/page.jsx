@@ -6,34 +6,7 @@ export const metadata = {
     description: 'Learn about Boffo Decor - our design philosophy, experience, and commitment to creating extraordinary spaces.',
 };
 
-// Experience Timeline Data
-const timeline = [
-    {
-        year: '2012',
-        title: 'Founded Boffo Decor',
-        description: 'Started with a vision to transform residential spaces into personalized sanctuaries.',
-    },
-    {
-        year: '2015',
-        title: 'Expanded to Commercial',
-        description: 'Extended our expertise to boutique hotels, restaurants, and corporate offices.',
-    },
-    {
-        year: '2018',
-        title: 'Award Recognition',
-        description: 'Received the Excellence in Interior Design Award from the Indian Design Council.',
-    },
-    {
-        year: '2021',
-        title: '100+ Projects Milestone',
-        description: 'Celebrated completing over 100 successful residential and commercial projects.',
-    },
-    {
-        year: '2024',
-        title: 'National Expansion',
-        description: 'Expanded operations to Bangalore, Delhi, and Goa with satellite studios.',
-    },
-];
+
 
 // Values Data
 const values = [
@@ -76,13 +49,7 @@ const values = [
     },
 ];
 
-// Credentials Data
-const credentials = [
-    { value: '12+', label: 'Years of Experience' },
-    { value: '150+', label: 'Projects Completed' },
-    { value: '50+', label: 'Happy Clients' },
-    { value: '8', label: 'Design Awards' },
-];
+
 
 export default function AboutPage() {
     return (
@@ -201,68 +168,9 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* ===== CREDENTIALS / STATS ===== */}
-            <section className="py-20 bg-[var(--color-gold)]">
-                <div className="container-custom">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {credentials.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-4xl md:text-5xl font-[family-name:var(--font-heading)] font-bold text-[var(--color-espresso)] mb-2">
-                                    {stat.value}
-                                </div>
-                                <p className="text-sm uppercase tracking-[0.1em] text-[var(--color-walnut)]">
-                                    {stat.label}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
-            {/* ===== TIMELINE / JOURNEY ===== */}
-            <section className="section-padding bg-[var(--color-ivory)]">
-                <div className="container-custom">
-                    <div className="text-center max-w-2xl mx-auto mb-16">
-                        <p className="text-sm uppercase tracking-[0.2em] text-[var(--color-gold)] mb-4">
-                            Our Journey
-                        </p>
-                        <h2 className="font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mb-6">
-                            Milestones & Achievements
-                        </h2>
-                        <div className="divider divider-center" />
-                    </div>
 
-                    {/* Timeline */}
-                    <div className="relative max-w-3xl mx-auto">
-                        {/* Vertical Line */}
-                        <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-[var(--color-sand)] transform md:-translate-x-1/2" />
 
-                        {timeline.map((item, index) => (
-                            <div
-                                key={index}
-                                className={`relative flex flex-col md:flex-row gap-8 mb-12 last:mb-0 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                                    }`}
-                            >
-                                {/* Dot */}
-                                <div className="absolute left-0 md:left-1/2 w-4 h-4 rounded-full bg-[var(--color-gold)] transform -translate-x-1/2 md:-translate-x-1/2 mt-1" />
-
-                                {/* Content */}
-                                <div className={`ml-8 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                                    <span className="text-3xl font-[family-name:var(--font-heading)] text-[var(--color-gold)]">
-                                        {item.year}
-                                    </span>
-                                    <h3 className="text-xl font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mt-2 mb-2">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-[var(--color-walnut)]">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* ===== CTA SECTION ===== */}
             <section className="section-padding bg-[var(--color-cream)]">
