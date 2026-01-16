@@ -114,8 +114,8 @@ export default function AboutPage() {
                         <div className="relative order-2 lg:order-1">
                             <div className="aspect-[3/4] relative overflow-hidden">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
-                                    alt="Lead Designer"
+                                    src="/founder.jpg"
+                                    alt="Principal Designer"
                                     fill
                                     className="object-cover"
                                 />
