@@ -268,16 +268,16 @@ export default function Home() {
                         <div className="flex items-center justify-center gap-4">
                             <div className="w-14 h-14 rounded-full bg-[var(--color-walnut)] overflow-hidden">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
-                                    alt="Client"
+                                    src="/client-profile.jpg"
+                                    alt="Vaibhav Malviya"
                                     width={56}
                                     height={56}
                                     className="object-cover"
                                 />
                             </div>
                             <div className="text-left">
-                                <p className="font-medium">Priya Sharma</p>
-                                <p className="text-sm text-[var(--color-taupe)]">Homeowner, Mumbai</p>
+                                <p className="font-medium">Vaibhav Malviya</p>
+                                <p className="text-sm text-[var(--color-taupe)]">Homeowner, Lucknow</p>
                             </div>
                         </div>
                     </div>
