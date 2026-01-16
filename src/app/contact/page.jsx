@@ -48,10 +48,7 @@ const contactInfo = [
 
 // Social Links
 const socialLinks = [
-    { href: 'https://instagram.com', label: 'Instagram' },
-    { href: 'https://pinterest.com', label: 'Pinterest' },
-    { href: 'https://linkedin.com', label: 'LinkedIn' },
-    { href: 'https://houzz.com', label: 'Houzz' },
+    { href: 'https://www.instagram.com/boffodecor/', label: 'Instagram' },
 ];
 
 export default function ContactPage() {
@@ -75,27 +72,50 @@ export default function ContactPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitStatus(null);
 
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        try {
+            // Using Web3Forms for email delivery
+            // Visit https://web3forms.com to generate your free Access Key
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: "YOUR_ACCESS_KEY_HERE", // <--- REPLACE THIS WITH YOUR KEY
+                    subject: `New Request: ${formData.projectType} from ${formData.name}`,
+                    from_name: "Boffo Decor Website",
+                    ...formData,
+                }),
+            });
 
-        // In production, you would send this to Netlify Forms or Formspree
-        console.log('Form submitted:', formData);
+            const result = await response.json();
 
-        setIsSubmitting(false);
-        setSubmitStatus('success');
-        setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            projectType: '',
-            budget: '',
-            timeline: '',
-            message: '',
-        });
-
-        // Reset status after 5 seconds
-        setTimeout(() => setSubmitStatus(null), 5000);
+            if (result.success) {
+                setSubmitStatus('success');
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    projectType: '',
+                    budget: '',
+                    timeline: '',
+                    message: '',
+                });
+            } else {
+                console.error("Form submission failed:", result);
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+            // Reset success status after 5 seconds
+            setTimeout(() => setSubmitStatus(null), 5000);
+        }
     };
 
     return (
@@ -134,6 +154,13 @@ export default function ContactPage() {
                                     <div className="mb-8 p-4 bg-[var(--color-sage)]/20 border border-[var(--color-sage)] text-[var(--color-charcoal)]">
                                         <p className="font-medium">Thank you for reaching out!</p>
                                         <p className="text-sm mt-1">We've received your message and will get back to you within 24 hours.</p>
+                                    </div>
+                                )}
+
+                                {submitStatus === 'error' && (
+                                    <div className="mb-8 p-4 bg-red-50 border border-red-200 text-red-700">
+                                        <p className="font-medium">Something went wrong.</p>
+                                        <p className="text-sm mt-1">Please try again later or contact us directly via phone.</p>
                                     </div>
                                 )}
 
@@ -374,7 +401,7 @@ export default function ContactPage() {
                                 },
                                 {
                                     q: 'Do you work with specific budget ranges?',
-                                    a: 'We work across various budget levels and are transparent about costs from the start. Our minimum project investment starts at ₹10 Lakhs for residential projects. We tailor our approach to maximize value within your budget.',
+                                    a: 'We work across various budget levels and are transparent about costs from the start. We tailor our approach to maximize value within your budget.',
                                 },
                                 {
                                     q: 'Can you work with my existing furniture?',
