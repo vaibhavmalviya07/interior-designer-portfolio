@@ -7,7 +7,6 @@ const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/portfolio', label: 'Portfolio' },
-    { href: '/services', label: 'Services' },
     { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
 ];
@@ -28,17 +27,17 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-[var(--color-ivory)]/95 backdrop-blur-md shadow-md py-4'
-                    : 'bg-transparent py-6'
+                ? 'bg-[var(--color-ivory)]/95 backdrop-blur-md shadow-md py-4'
+                : 'bg-transparent py-6'
                 }`}
         >
             <nav className="container-custom flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3 group">
                     <div className="relative w-12 h-12 overflow-hidden rounded-sm">
-                        <img 
-                            src="/logo.jpg" 
-                            alt="Boffo Decor Logo" 
+                        <img
+                            src="/logo.jpg"
+                            alt="Boffo Decor Logo"
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -95,8 +94,8 @@ export default function Header() {
             {/* Mobile Menu */}
             <div
                 className={`lg:hidden fixed inset-0 top-[72px] bg-[var(--color-ivory)] transition-all duration-500 ${isMenuOpen
-                        ? 'opacity-100 visible translate-y-0'
-                        : 'opacity-0 invisible -translate-y-4'
+                    ? 'opacity-100 visible translate-y-0'
+                    : 'opacity-0 invisible -translate-y-4'
                     }`}
             >
                 <div className="container-custom py-8 flex flex-col gap-6">

@@ -5,15 +5,8 @@ const footerLinks = {
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
         { href: '/portfolio', label: 'Portfolio' },
-        { href: '/services', label: 'Services' },
         { href: '/blog', label: 'Blog' },
         { href: '/contact', label: 'Contact' },
-    ],
-    services: [
-        { href: '/services#residential', label: 'Residential Design' },
-        { href: '/services#commercial', label: 'Commercial Spaces' },
-        { href: '/services#renovation', label: 'Renovation' },
-        { href: '/services#consultation', label: 'Consultation' },
     ],
 };
 
@@ -111,24 +104,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Services Column */}
-                    <div>
-                        <h4 className="text-sm uppercase tracking-[0.15em] text-[var(--color-gold)] mb-6">
-                            Services
-                        </h4>
-                        <ul className="space-y-3">
-                            {footerLinks.services.map((link) => (
-                                <li key={link.href}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-[var(--color-taupe)] hover:text-[var(--color-cream)] transition-colors"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+
 
                     {/* Contact Column */}
                     <div>

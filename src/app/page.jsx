@@ -8,35 +8,21 @@ const featuredProjects = [
         title: 'Modern Penthouse',
         category: 'Residential',
         location: 'Mumbai',
-        image: '/projects/project-1.jpg',
+        image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
     },
     {
         id: 2,
         title: 'Boutique Hotel Lobby',
         category: 'Commercial',
         location: 'Goa',
-        image: '/projects/project-2.jpg',
+        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
     },
     {
         id: 3,
         title: 'Contemporary Villa',
         category: 'Residential',
         location: 'Bangalore',
-        image: '/projects/project-3.jpg',
-    },
-    {
-        id: 4,
-        title: 'Luxury Apartment',
-        category: 'Residential',
-        location: 'Delhi',
-        image: '/projects/project-4.jpg',
-    },
-    {
-        id: 5,
-        title: 'Minimalist Studio',
-        category: 'Commercial',
-        location: 'Pune',
-        image: '/projects/project-5.jpg',
+        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
     },
 ];
 
@@ -202,12 +188,7 @@ export default function Home() {
                         ))}
                     </div>
 
-                    {/* View All Services CTA */}
-                    <div className="text-center mt-12">
-                        <Link href="/services" className="btn btn-outline">
-                            View All Services
-                        </Link>
-                    </div>
+
                 </div>
             </section>
 
