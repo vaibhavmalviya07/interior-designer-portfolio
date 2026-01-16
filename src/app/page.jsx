@@ -8,21 +8,35 @@ const featuredProjects = [
         title: 'Modern Penthouse',
         category: 'Residential',
         location: 'Mumbai',
-        image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+        image: '/projects/project-1.jpg',
     },
     {
         id: 2,
         title: 'Boutique Hotel Lobby',
         category: 'Commercial',
         location: 'Goa',
-        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
+        image: '/projects/project-2.jpg',
     },
     {
         id: 3,
         title: 'Contemporary Villa',
         category: 'Residential',
         location: 'Bangalore',
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+        image: '/projects/project-3.jpg',
+    },
+    {
+        id: 4,
+        title: 'Luxury Apartment',
+        category: 'Residential',
+        location: 'Delhi',
+        image: '/projects/project-4.jpg',
+    },
+    {
+        id: 5,
+        title: 'Minimalist Studio',
+        category: 'Commercial',
+        location: 'Pune',
+        image: '/projects/project-5.jpg',
     },
 ];
 
