@@ -5,24 +5,21 @@ import Image from 'next/image';
 const featuredProjects = [
     {
         id: 1,
-        title: 'Modern Penthouse',
+        title: 'Modern Master Bedroom',
         category: 'Residential',
-        location: 'Mumbai',
-        image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80',
+        image: '/projects/bedroom-red-chair.jpg',
     },
     {
         id: 2,
-        title: 'Boutique Hotel Lobby',
-        category: 'Commercial',
-        location: 'Goa',
-        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
+        title: 'Luxury Island Kitchen',
+        category: 'Residential',
+        image: '/projects/luxury-kitchen-island.jpg',
     },
     {
         id: 3,
-        title: 'Contemporary Villa',
+        title: 'Living Room Mirror Wall',
         category: 'Residential',
-        location: 'Bangalore',
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+        image: '/projects/living-room-mirrors.jpg',
     },
 ];
 
@@ -240,9 +237,7 @@ export default function Home() {
                                         <h3 className="text-xl font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mt-2 mb-1">
                                             {project.title}
                                         </h3>
-                                        <p className="text-sm text-[var(--color-taupe)]">
-                                            {project.location}
-                                        </p>
+
                                     </div>
                                 </div>
                             </Link>
