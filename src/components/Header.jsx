@@ -34,13 +34,17 @@ export default function Header() {
         >
             <nav className="container-custom flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <span className="text-2xl font-semibold tracking-tight font-[family-name:var(--font-heading)]">
-                        <span className="text-[var(--color-walnut)]">ARIA</span>
-                        <span className="text-[var(--color-gold)]">.</span>
-                    </span>
-                    <span className="text-xs text-[var(--color-taupe)] uppercase tracking-[0.2em] hidden sm:block">
-                        Interior Design
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="relative w-12 h-12 overflow-hidden rounded-sm">
+                        <img 
+                            src="/logo.jpg" 
+                            alt="Boffo Decor Logo" 
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                    <span className="text-xl font-semibold tracking-tight font-[family-name:var(--font-heading)] flex flex-col leading-none">
+                        <span className="text-[var(--color-walnut)] tracking-widest">BOFFO</span>
+                        <span className="text-[var(--color-gold)] text-sm tracking-[0.2em]">DECOR</span>
                     </span>
                 </Link>
 

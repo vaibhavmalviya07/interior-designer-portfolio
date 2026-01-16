@@ -67,8 +67,9 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="inline-block mb-6">
-                            <span className="text-3xl font-semibold tracking-tight font-[family-name:var(--font-heading)]">
-                                ARIA<span className="text-[var(--color-gold)]">.</span>
+                            <span className="text-2xl font-semibold tracking-tight font-[family-name:var(--font-heading)] flex flex-col leading-none">
+                                <span className="text-[var(--color-walnut)] tracking-widest">BOFFO</span>
+                                <span className="text-[var(--color-gold)] text-sm tracking-[0.2em]">DECOR</span>
                             </span>
                         </Link>
                         <p className="text-[var(--color-taupe)] mb-6 leading-relaxed">
@@ -148,8 +149,8 @@ export default function Footer() {
                             </p>
                             <p>
                                 <span className="block text-[var(--color-cream)] font-medium">Email</span>
-                                <a href="mailto:hello@ariainteriors.com" className="hover:text-[var(--color-gold)] transition-colors">
-                                    hello@ariainteriors.com
+                                <a href="mailto:hello@boffodecor.com" className="hover:text-[var(--color-gold)] transition-colors">
+                                    hello@boffodecor.com
                                 </a>
                             </p>
                         </div>
@@ -161,7 +162,7 @@ export default function Footer() {
             <div className="border-t border-[var(--color-walnut)]">
                 <div className="container-custom py-6 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-[var(--color-taupe)]">
-                        © {currentYear} Aria Interiors. All rights reserved.
+                        © {currentYear} Boffo Decor. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6 text-sm text-[var(--color-taupe)]">
                         <Link href="/privacy" className="hover:text-[var(--color-cream)] transition-colors">

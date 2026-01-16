@@ -32,8 +32,8 @@ const contactInfo = [
             </svg>
         ),
         title: 'Email Us',
-        details: ['hello@ariainteriors.com', 'projects@ariainteriors.com'],
-        links: ['mailto:hello@ariainteriors.com', 'mailto:projects@ariainteriors.com'],
+        details: ['hello@boffodecor.com', 'projects@boffodecor.com'],
+        links: ['mailto:hello@boffodecor.com', 'mailto:projects@boffodecor.com'],
     },
     {
         icon: (

@@ -49,9 +49,32 @@ Initial project setup, Git configuration, and documentation creation.
 - Implement contact form functionality
 - Optimize images and add proper SEO meta tags
 
+
 ---
 
-## How to Update This File
+## Session 2 - January 17, 2026
+
+### Summary
+Rebranding the entire website from "Aria Interiors" to **"Boffo Decor"** based on user request.
+
+### Completed Tasks
+#### 1. Rebranding Execution
+- **Assets**: Added `public/logo.jpg` for the new brand.
+- **Header**: Replaced text logo with the new image logo and updated brand name to "BOFFO DECOR".
+- **Footer**: Updated copyright, brand name, and contact email (`hello@boffodecor.com`).
+- **Layout**: Updated site metadata (Title, Description, Graph) in `layout.jsx`.
+- **Content Updates**:
+  - **Home Page**: Updated testimonials.
+  - **About Page**: Updated "Founded" section, timeline, and biography. Removed placeholder founder name "Aria Kapoor".
+
+### Technical Notes
+- Fixed an HTML nesting issue in `about/page.jsx` where a `div` tag was missing.
+- Ensured no "Aria" references remain in the source code.
+
+### Next Steps
+- Verify visual alignment of the new logo.
+- Continue with adding Portfolio gallery functionality.
+
 
 After each development session, add a new section with:
 1. **Date** and session number

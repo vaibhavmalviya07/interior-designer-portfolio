@@ -2,15 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'About | Aria Interiors',
-    description: 'Learn about Aria Interiors - our design philosophy, experience, and commitment to creating extraordinary spaces.',
+    title: 'About | Boffo Decor',
+    description: 'Learn about Boffo Decor - our design philosophy, experience, and commitment to creating extraordinary spaces.',
 };
 
 // Experience Timeline Data
 const timeline = [
     {
         year: '2012',
-        title: 'Founded Aria Interiors',
+        title: 'Founded Boffo Decor',
         description: 'Started with a vision to transform residential spaces into personalized sanctuaries.',
     },
     {
@@ -130,19 +130,17 @@ export default function AboutPage() {
                             <p className="text-sm uppercase tracking-[0.2em] text-[var(--color-gold)] mb-4">
                                 Meet the Founder
                             </p>
-                            <h2 className="font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mb-6">
-                                Aria Kapoor
+                            <h2 className="font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mb-2">
+                                Principal Designer
                             </h2>
+                            <h4 className="font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] mb-6">
+                                Founder
+                            </h4>
                             <div className="divider" />
-                            <p className="text-[var(--color-walnut)] mb-6 leading-relaxed">
-                                With a Master's degree in Interior Architecture from the prestigious
-                                National Institute of Design and over 12 years of experience, I founded
-                                Aria Interiors with a simple belief: everyone deserves a space that
-                                reflects their unique story.
-                            </p>
-                            <p className="text-[var(--color-walnut)] mb-6 leading-relaxed">
-                                My design journey has taken me from traditional Indian aesthetics to
-                                contemporary minimalism, and I've learned that the most beautiful spaces
+                            <p className="text-[var(--color-taupe)] mb-6 leading-relaxed">
+                                Founded in 2015, Boffo Decor started with a simple belief: everyone deserves a space that
+                                reflects their unique story. Our design journey has taken us from traditional Indian aesthetics to
+                                contemporary minimalism, and we've learned that the most beautiful spaces
                                 are those that seamlessly blend functionality with personal expression.
                             </p>
                             <p className="text-[var(--color-walnut)] mb-8 leading-relaxed">
@@ -155,7 +153,7 @@ export default function AboutPage() {
                             <div className="flex items-center gap-4">
                                 <div className="w-16 h-[2px] bg-[var(--color-gold)]" />
                                 <span className="text-xl font-[family-name:var(--font-heading)] text-[var(--color-charcoal)] italic">
-                                    Aria Kapoor
+                                    Founder
                                 </span>
                             </div>
                         </div>

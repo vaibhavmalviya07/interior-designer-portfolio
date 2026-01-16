@@ -16,21 +16,21 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-    title: "Aria Interiors | Premium Interior Design",
-    description: "Transform your space with Aria Interiors. We create sophisticated, timeless interiors for high-end residential and commercial clients. Book a consultation today.",
+    title: "Boffo Decor | Premium Interior Design",
+    description: "Transform your space with Boffo Decor. We create sophisticated, timeless interiors for high-end residential and commercial clients. Book a consultation today.",
     keywords: ["interior design", "luxury interiors", "residential design", "commercial design", "interior decorator", "home design"],
-    authors: [{ name: "Aria Interiors" }],
+    authors: [{ name: "Boffo Decor" }],
     openGraph: {
-        title: "Aria Interiors | Premium Interior Design",
-        description: "Transform your space with Aria Interiors. We create sophisticated, timeless interiors for high-end residential and commercial clients.",
+        title: "Boffo Decor | Premium Interior Design",
+        description: "Transform your space with Boffo Decor. We create sophisticated, timeless interiors for high-end residential and commercial clients.",
         type: "website",
         locale: "en_IN",
-        siteName: "Aria Interiors",
+        siteName: "Boffo Decor",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Aria Interiors | Premium Interior Design",
-        description: "Transform your space with Aria Interiors. We create sophisticated, timeless interiors.",
+        title: "Boffo Decor | Premium Interior Design",
+        description: "Transform your space with Boffo Decor. We create sophisticated, timeless interiors.",
     },
     robots: {
         index: true,
