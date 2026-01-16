@@ -101,15 +101,10 @@ export default function AboutPage() {
                             </h4>
                             <div className="divider" />
                             <p className="text-[var(--color-taupe)] mb-6 leading-relaxed">
-                                Founded in 2015, Boffo Decor started with a simple belief: everyone deserves a space that
-                                reflects their unique story. Our design journey has taken us from traditional Indian aesthetics to
-                                contemporary minimalism, and we've learned that the most beautiful spaces
-                                are those that seamlessly blend functionality with personal expression.
+                                Boffo Decor began in 2023 with an unwavering conviction: your home should narrate your story, not someone else's. Our design evolution spans the vibrant palette of traditional Indian interiors to the serene simplicity of modern minimalism, revealing a truth we hold dear—the most captivating spaces are those that marry purpose with personal soul.
                             </p>
                             <p className="text-[var(--color-walnut)] mb-8 leading-relaxed">
-                                When I'm not designing, you'll find me exploring artisan markets,
-                                visiting architectural landmarks, or experimenting with new textures
-                                and materials in my workshop.
+                                Outside the studio, I chase inspiration through bustling artisan markets, photograph architectural marvels, and lose myself in experimentation with textures and materials that push creative boundaries.
                             </p>
 
                             {/* Signature */}
