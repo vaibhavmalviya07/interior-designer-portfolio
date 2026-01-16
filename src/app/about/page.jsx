@@ -173,9 +173,9 @@ export default function AboutPage() {
                         </h2>
                         <div className="divider divider-center bg-[var(--color-gold)]" />
                         <p className="text-lg text-[var(--color-taupe)] leading-relaxed">
-                            We believe in creating spaces that are not just visually stunning,
-                            but deeply meaningful and perfectly functional for the people who
-                            inhabit them.
+                            We listen to your dreams, understand your preferences, and shape them into
+                            functional, meaningful spaces that feel like home—designed thoughtfully,
+                            lived beautifully.
                         </p>
                     </div>
 
