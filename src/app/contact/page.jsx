@@ -12,8 +12,8 @@ const contactInfo = [
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
         ),
-        title: 'Visit Our Studio',
-        details: ['123 Design District', 'Bandra West, Mumbai', 'Maharashtra 400050'],
+        title: 'We are in',
+        details: ['Chapra, Bihar,', 'India, 841401'],
     },
     {
         icon: (
@@ -22,8 +22,8 @@ const contactInfo = [
             </svg>
         ),
         title: 'Call Us',
-        details: ['+91 98765 43210', '+91 22 2634 5678'],
-        links: ['tel:+919876543210', 'tel:+912226345678'],
+        details: ['+91 9229242421', '+91 8102668500'],
+        links: ['tel:+919229242421', 'tel:+918102668500'],
     },
     {
         icon: (
@@ -343,25 +343,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            {/* Map Placeholder */}
-                            <div className="relative aspect-[4/3] bg-[var(--color-sand)] overflow-hidden">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80"
-                                    alt="Location map"
-                                    fill
-                                    className="object-cover opacity-80"
-                                />
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <a
-                                        href="https://maps.google.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn btn-primary text-sm"
-                                    >
-                                        View on Maps
-                                    </a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
