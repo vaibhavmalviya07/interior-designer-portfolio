@@ -7,7 +7,6 @@ export const metadata = {
 };
 
 
-
 // Values Data
 const values = [
     {
@@ -48,9 +47,6 @@ const values = [
         ),
     },
 ];
-
-
-
 export default function AboutPage() {
     return (
         <>
@@ -167,8 +163,6 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-
-
 
 
 
