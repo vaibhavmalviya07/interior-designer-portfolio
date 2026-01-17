@@ -84,7 +84,7 @@ export default function ContactPage() {
                     Accept: "application/json",
                 },
                 body: JSON.stringify({
-                    access_key: "YOUR_ACCESS_KEY_HERE", // <--- REPLACE THIS WITH YOUR KEY
+                    access_key: "b393c9af-9d6d-4a8e-9a09-cfc2688bd600", // <--- REPLACE THIS WITH YOUR KEY
                     subject: `New Request: ${formData.projectType} from ${formData.name}`,
                     from_name: "Boffo Decor Website",
                     ...formData,
