@@ -389,7 +389,8 @@ p {
   padding: 1rem 1.25rem;
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--foreground);
+  color: var(--color-espresso);
+  font-weight: 500;
   background: var(--color-ivory);
   border: 1.5px solid var(--color-sand);
   border-radius: 4px;
