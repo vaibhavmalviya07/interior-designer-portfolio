@@ -250,6 +250,8 @@ export default function ContactPage() {
                                                 className="form-select"
                                             >
                                                 <option value="">Select budget range</option>
+                                                <option value="0-5">₹0 - 5 Lakhs</option>
+                                                <option value="5-10">₹5 - 10 Lakhs</option>
                                                 <option value="10-25">₹10 - 25 Lakhs</option>
                                                 <option value="25-50">₹25 - 50 Lakhs</option>
                                                 <option value="50-100">₹50 Lakhs - 1 Crore</option>
